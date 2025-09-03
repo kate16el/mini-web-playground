@@ -93,3 +93,8 @@ $("suggest").addEventListener("click", async () => {
 });
 
 render();
+document.getElementById("toggleDark").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.setItem("kat_dark", document.body.classList.contains("dark") ? "1" : "0");
+});
+if (localStorage.getItem("kat_dark")==="1") document.body.classList.add("dark");
