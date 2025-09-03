@@ -18,3 +18,5 @@ button:hover { background:#334155; }
 .item:last-child { border-bottom:0; }
 .item .meta { font-size:0.8rem; color:var(--muted); }
 .footer { max-width:980px; margin:24px auto; padding:0 16px 24px; font-size:0.9rem; color:var(--muted); text-align:center; }
+/* Dark mode */
+.dark { --bg:#0b1220; --card:#0f172a; --ink:#e2e8f0; --muted:#94a3b8; --line:#1f2937; }
