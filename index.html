@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Katerina’s Mini Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Katerina’s Mini Web App</h1>
+    <div class="stats">
+      <span id="total">Total: 0</span>
+      <span id="done">Done: 0</span>
+      <span id="open">Open: 0</span>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Add a task</h2>
+      <form id="taskForm">
+        <input id="title" placeholder="e.g. Practise GitHub branches" />
+        <select id="tag">
+          <option value="react">react</option>
+          <option value="node">node</option>
+          <option value="azure">azure</option>
+          <option value="github">github</option>
+          <option value="python">python</option>
+        </select>
+        <button type="submit">Add</button>
+      </form>
+      <button id="suggest">Suggest starter ideas</button>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <h2>Your tasks</h2>
+        <label>
+          Filter
+          <select id="filter">
+            <option value="all">All</option>
+            <option value="open">Open</option>
+            <option value="done">Done</option>
+          </select>
+        </label>
+      </div>
+      <ul id="list" class="list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">Built with ❤️ for Katerina • Next: try dark mode + deploy</footer>
+  <script src="script.js"></script>
+</body>
+</html>
